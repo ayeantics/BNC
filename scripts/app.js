@@ -12,7 +12,7 @@ function toggleNav() {
   } else {
     menuIcon.classList.remove("bi-list");
     menuIcon.classList.add("bi-x-lg");
-    navLinksWrapper.classList.remove("hide"); // Remove the hide class when opening
+    navLinksWrapper.classList.remove("hide");
     navLinksWrapper.classList.add("show");
   }
 }
