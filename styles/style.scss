@@ -294,7 +294,7 @@ header {
             &:hover {
               background-color: #000;
             }
-            
+
             &:hover i {
               transform: rotate(45deg);
             }
@@ -341,7 +341,7 @@ header {
       justify-content: flex-end;
       align-items: flex-end;
       width: 850px;
-      border: 2px solid black;
+      // border: 2px solid black;
 
       .customer-flex {
         display: flex;
@@ -420,7 +420,7 @@ header {
       p {
         font-size: 15px;
       }
-      
+
       .service-container {
         display: flex;
         flex-direction: column;
@@ -465,12 +465,8 @@ header {
     }
   }
   .welcome-section {
-    svg {
-      width: 150px;
-    }
     .container {
       flex-direction: column;
-      flex-wrap: wrap-reverse;
       text-align: center;
 
       .left-side {
@@ -481,8 +477,29 @@ header {
       }
 
       .right-side {
+        width: 100%;
+        margin-bottom: 100px;
         img {
-          width: 80%;
+          width: 100%;
+        }
+        
+      }
+    }
+  }
+  .about-section {
+    .container {
+      flex-direction: column;
+
+      .img-container {
+        width: 100%;
+      }
+      .about-us-container {
+        text-align: center;
+
+        .about-us-text {
+          .line {
+            max-width: 100%;
+          }
         }
       }
     }

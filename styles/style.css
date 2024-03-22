@@ -283,7 +283,6 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
   width: 850px;
-  border: 2px solid black;
 }
 .about-section .container .img-container .customer-flex {
   display: flex;
@@ -381,12 +380,8 @@ header {
   .navbar .left-side .nav-links {
     display: none;
   }
-  .welcome-section svg {
-    width: 150px;
-  }
   .welcome-section .container {
     flex-direction: column;
-    flex-wrap: wrap-reverse;
     text-align: center;
   }
   .welcome-section .container .left-side {
@@ -395,7 +390,23 @@ header {
   .welcome-section .container .left-side .text {
     align-items: center;
   }
+  .welcome-section .container .right-side {
+    width: 100%;
+    margin-bottom: 100px;
+  }
   .welcome-section .container .right-side img {
-    width: 80%;
+    width: 100%;
+  }
+  .about-section .container {
+    flex-direction: column;
+  }
+  .about-section .container .img-container {
+    width: 100%;
+  }
+  .about-section .container .about-us-container {
+    text-align: center;
+  }
+  .about-section .container .about-us-container .about-us-text .line {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
