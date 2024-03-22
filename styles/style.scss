@@ -64,7 +64,7 @@ header {
       flex-direction: column;
       position: absolute;
       top: 101px;
-      right: 0;
+      right: 0px;
       width: 100%;
       background-color: #fff;
       padding: 10px;
@@ -75,7 +75,7 @@ header {
       a {
         margin-bottom: 20px;
         width: 100%;
-        border: 1px solid black;
+        // border: 1px solid black;
         // width: 150px;
         text-align: center;
       }
@@ -357,9 +357,22 @@ header {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
           rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
-        i {
-          font-size: 30px;
-          color: #ff6600;
+        .icon {
+          animation: bounce 0.2s infinite alternate;
+
+          i {
+            font-size: 30px;
+            color: #ff6600;
+
+            @keyframes bounce {
+              0% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(-2px);
+              }
+            }
+          }
         }
 
         .customer-text {
@@ -482,7 +495,7 @@ header {
         img {
           width: 100%;
         }
-        
+
       }
     }
   }
@@ -492,6 +505,12 @@ header {
 
       .img-container {
         width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .customer-flex {
+          margin-top: 200px;
+        }
       }
       .about-us-container {
         text-align: center;
