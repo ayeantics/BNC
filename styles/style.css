@@ -65,6 +65,9 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.3s ease-in-out;
 }
+.navbar .left-side .nav-links.show.hide {
+  animation: slideUp 0.3s ease-in-out;
+}
 .navbar .left-side .nav-links.show a {
   margin-bottom: 20px;
   width: 100%;
@@ -78,6 +81,16 @@ header {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 .navbar .left-side .nav-links {
