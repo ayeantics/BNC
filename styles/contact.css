@@ -354,6 +354,8 @@ main .bg-section .container .socials a .bi-whatsapp {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  border: 1px solid #ff6600;
+  border-radius: 8px;
 }
 .form-section .container .contacts-container h3 {
   font-size: 19px;
@@ -374,6 +376,17 @@ main .bg-section .container .socials a .bi-whatsapp {
   gap: 15px;
   justify-content: center;
   align-items: start;
+  width: 100%;
+}
+.form-section .container .contacts-container .contact-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section .container .contacts-container .contact-item .info h3 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -393,10 +406,30 @@ main .bg-section .container .socials a .bi-whatsapp {
     max-width: 100%;
     text-align: center;
   }
+  .form-section .container .form h2 {
+    font-size: 14px;
+  }
+  .form-section .container .form h1 {
+    font-size: 24px;
+  }
+  .form-section .container .form p {
+    font-size: 14px;
+  }
+  .form-section .container .form button {
+    font-size: 14px;
+  }
   .form-section .container .form form .input-container .input-row input {
     width: 100%;
   }
   .contacts-container {
     margin-top: 100px;
+  }
+  .contacts-container .contact-item {
+    align-items: center;
+  }
+  .contacts-container .contact-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=contact.css.map */

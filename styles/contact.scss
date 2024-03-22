@@ -406,6 +406,8 @@ main {
       justify-content: center;
       align-items: center;
       gap: 20px;
+      border: 1px solid #ff6600;
+      border-radius: 8px;
 
       h3 {
         font-size: 19px;
@@ -429,6 +431,20 @@ main {
         gap: 15px;
         justify-content: center;
         align-items: start;
+        // border: 1px solid black;
+        width: 100%;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
       }
     }
   }
@@ -457,6 +473,23 @@ main {
             max-width: 100%;
             text-align: center;
 
+            h2 {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+
+
             form {
                 
                 .input-container {
@@ -476,6 +509,16 @@ main {
 
   .contacts-container {
     margin-top: 100px;
+
+    .contact-item {
+        align-items: center;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
   }
 }
 
