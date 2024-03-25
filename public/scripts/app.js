@@ -19,19 +19,3 @@ function toggleNav() {
     navLinksWrapper.classList.add("show");
   }
 }
-
-function handleSubmit(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
-
-  // Hide the submit button after submission
-  submitButton.style.display = 'none';
-
-  // Display the confirmation message (optional)
-  const confirmationMessage = document.getElementById('form-submitted-message');
-  confirmationMessage.style.display = 'block';
-
-  form.reset();
-}
-
-form.addEventListener("submit", handleSubmit);
