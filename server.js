@@ -55,6 +55,9 @@ app.post('/submit-form', (req, res) => {
     res.send('Form submitted successfully!');
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
