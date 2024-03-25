@@ -8,6 +8,9 @@ const port = 3000;
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Format the current date and time
 function formatDate() {
     const date = new Date();
