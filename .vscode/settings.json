@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2b8d414d-29d5-4498-97bc-182372096d8d/resourceGroups/beka_group/providers/Microsoft.Web/sites/beka",
+    "appService.deploySubpath": "."
+}
