@@ -22,30 +22,14 @@ function toggleNav() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
-  const sendButton = document.querySelector(".submit-button");
-  const formSubmittedMessage = document.getElementById(
-    "form-submitted-message"
-  );
-
-  // Hide the form submitted message initially
-  formSubmittedMessage.style.display = "none";
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Show the loading message and hide the form
-    formSubmittedMessage.innerHTML = "<p>Loading...</p>";
-    formSubmittedMessage.style.display = "block";
-    form.style.display = "none";
-
     const formData = new FormData(form);
-    const formDataObj = {};
-    formData.forEach((value, key) => {
-      formDataObj[key] = value;
-    });
-    const formDataString = new URLSearchParams(formDataObj).toString();
+    const formDataString = new URLSearchParams(formData).toString();
 
-    fetch("/submit-form", {
+    fetch(form.action, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -55,26 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           form.reset();
-          // Show the success message and the send button
-          formSubmittedMessage.innerHTML = `
-                    <h2>მოთხოვნა მიღებულია!</h2>
-                    <p>მადლობა მოთხოვნისთვის, მალე დაგვიკავშირდებით.</p>
-                    <a href="../index.html">მთავარ გვერდზე დაბრუნება</a>
-                `;
-          sendButton.style.display = "inline-block";
+          // Optionally, perform any other actions on successful form submission
         } else {
-          // Show an error message if the submission fails and show the send button again
-          formSubmittedMessage.innerHTML =
-            "<p>Form submission failed. Please try again later.</p>";
-          form.style.display = "block";
+          // Show an error message if the submission fails
+          console.error("Form submission failed.");
         }
       })
       .catch((error) => {
         console.error("Error:", error);
-        // Show an error message if there's a network error and show the send button again
-        formSubmittedMessage.innerHTML =
-          "<p>An error occurred. Please try again later.</p>";
-        form.style.display = "block";
+        // Show an error message if there's a network error
       });
   });
 });

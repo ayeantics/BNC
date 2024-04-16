@@ -1,6 +1,6 @@
 @font-face {
   font-family: "mrgvlovani";
-  src: url(../fonts/bpg_mrgvlovani_caps_2010.ttf);
+  src: url(../../fonts/bpg_mrgvlovani_caps_2010.ttf);
 }
 * {
   font-family: "mrgvlovani";
@@ -336,6 +336,14 @@ main .bg-section .container .socials a .bi-whatsapp {
 .form-section .container .form form .input-container .input-row .messageinput {
   height: 100px;
   width: 100%;
+  resize: none;
+  padding: 12px;
+  outline: none;
+  border: 1px solid #ccc;
+  transition: all 300ms ease-in-out;
+}
+.form-section .container .form form .input-container .input-row .messageinput:focus {
+  border: 1px solid #000;
 }
 .form-section .container .form form .input-container .input-row input {
   flex: 1;

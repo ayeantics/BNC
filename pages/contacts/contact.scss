@@ -1,6 +1,6 @@
 @font-face {
   font-family: "mrgvlovani";
-  src: url(../fonts/bpg_mrgvlovani_caps_2010.ttf);
+  src: url(../../fonts/bpg_mrgvlovani_caps_2010.ttf);
 }
 
 * {
@@ -395,6 +395,16 @@ main {
             .messageinput {
               height: 100px;
               width: 100%;
+              resize: none;
+              padding: 12px;
+              outline: none;
+              border: 1px solid #ccc;
+              transition: all 300ms ease-in-out;
+
+              &:focus {
+                border: 1px solid #000;
+
+              }
             }
 
             input {
