@@ -332,13 +332,14 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #f3f3f3;
 }
 .about-section .container {
   display: flex;
   margin-top: 100px;
   gap: 100px;
+  margin-bottom: 100px;
 }
 .about-section .container .img-container {
   display: relative;
@@ -346,7 +347,7 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
   border-radius: 10px;
-  width: 850px;
+  width: 650px;
   box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
 }
 .about-section .container .img-container .customer-flex {
@@ -400,10 +401,6 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
-  max-width: 600px;
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 .about-section .container .about-us-container .about-us-text {
   color: #ff6600;
@@ -557,6 +554,11 @@ footer .text-center p {
   }
   .about-section .container .about-us-container {
     text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-wrap: wrap;
   }
   .about-section .container .about-us-container .about-us-text .line {
     max-width: 100%;
