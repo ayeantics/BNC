@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  height: 500vh;
+  height: 100vh;
 }
 
 header {
@@ -332,20 +332,22 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #f3f3f3;
 }
 .about-section .container {
   display: flex;
   margin-top: 100px;
-  gap: 150px;
+  gap: 100px;
 }
 .about-section .container .img-container {
   display: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  border-radius: 10px;
   width: 850px;
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
 }
 .about-section .container .img-container .customer-flex {
   display: flex;
@@ -398,14 +400,17 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding: 20px;
   max-width: 600px;
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 .about-section .container .about-us-container .about-us-text {
   color: #ff6600;
   font-weight: 500;
 }
 .about-section .container .about-us-container .about-us-text .line {
-  max-width: 255px;
+  max-width: 235px;
   background-color: #ff6600;
   padding: 1px;
 }
@@ -424,7 +429,7 @@ header {
 .about-section .container .about-us-container .service-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   position: relative;
 }
 .about-section .container .about-us-container .service-container .service {
@@ -442,6 +447,54 @@ header {
   padding: 10px;
   border-radius: 50%;
   color: #fff;
+}
+.about-section .container .about-us-container button {
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+.about-section .container .about-us-container button:hover {
+  background-color: #000;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer p {
+  line-height: 1.6;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer ul li a:hover {
+  color: #ff6600;
+}
+footer .bi {
+  margin-right: 10px;
+}
+footer .row {
+  margin-bottom: 30px;
+}
+footer .text-center p {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {

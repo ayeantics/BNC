@@ -192,7 +192,7 @@
 }
 
 main .bg-section {
-  background-image: url(../images/background-contact.png);
+  background-image: url(../../images/background-contact.png);
   background-color: #000000;
   background-position: 0 60px;
   opacity: 80%;
@@ -249,7 +249,7 @@ main .bg-section .container .socials a .bi-whatsapp {
 
 .form-section {
   margin-top: 100px;
-  height: 100vh;
+  margin-bottom: 100px;
 }
 .form-section .container {
   display: flex;
@@ -387,8 +387,8 @@ main .bg-section .container .socials a .bi-whatsapp {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border: 1px solid #ff6600;
   border-radius: 8px;
+  background-color: transparent;
 }
 .form-section .container .contacts-container h3 {
   font-size: 19px;
@@ -410,6 +410,9 @@ main .bg-section .container .socials a .bi-whatsapp {
   justify-content: center;
   align-items: start;
   width: 100%;
+}
+.form-section .container .contacts-container .contact-item * {
+  text-decoration: none;
 }
 .form-section .container .contacts-container .contact-item .info {
   display: flex;
@@ -465,38 +468,4 @@ main .bg-section .container .socials a .bi-whatsapp {
     justify-content: center;
     align-items: center;
   }
-}
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 0;
-}
-footer h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-footer p {
-  line-height: 1.6;
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-footer ul li a:hover {
-  color: #ff6600;
-}
-footer .bi {
-  margin-right: 10px;
-}
-footer .row {
-  margin-bottom: 30px;
-}
-footer .text-center p {
-  margin-bottom: 0;
 }/*# sourceMappingURL=contact.css.map */

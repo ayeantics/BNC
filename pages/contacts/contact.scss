@@ -231,7 +231,7 @@
 
 main {
   .bg-section {
-    background-image: url(../images/background-contact.png);
+    background-image: url(../../images/background-contact.png);
     background-color: #000000;
     background-position: 0 60px;
     opacity: 80%;
@@ -298,7 +298,8 @@ main {
 
 .form-section {
   margin-top: 100px;
-  height: 100vh;
+  // height: 100vh;
+  margin-bottom: 100px;
 
   .container {
     display: flex;
@@ -446,8 +447,9 @@ main {
       justify-content: center;
       align-items: center;
       gap: 20px;
-      border: 1px solid #ff6600;
       border-radius: 8px;
+      // box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
+      background-color: transparent;
 
       h3 {
         font-size: 19px;
@@ -473,6 +475,10 @@ main {
         align-items: start;
         // border: 1px solid black;
         width: 100%;
+
+        * {
+          text-decoration: none;
+        }
 
         .info {
           display: flex;
@@ -560,49 +566,3 @@ main {
 }
 
 // Footer Styles
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 0;
-
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  p {
-    line-height: 1.6;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      a {
-        color: #fff;
-        text-decoration: none;
-        transition: all 0.3s ease;
-
-        &:hover {
-          color: #ff6600;
-        }
-      }
-    }
-  }
-
-  .bi {
-    margin-right: 10px;
-  }
-
-  .row {
-    margin-bottom: 30px;
-  }
-
-  .text-center {
-    p {
-      margin-bottom: 0;
-    }
-  }
-}
