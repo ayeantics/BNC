@@ -525,7 +525,7 @@ header {
 
         .service {
           display: flex;
-          gap: 20px;
+          gap: 30px;
 
           .service-inner {
             display: flex;
@@ -687,6 +687,28 @@ footer {
           .line {
             max-width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about-section {
+    .container {
+      .about-us-container {
+        .about-us-text {
+          font-size: 18px;
+        }
+
+        h3 {
+          font-size: 19px;
+        }
+
+        .service-container {
+          gap: 50px;
+          margin-top: 30px;
+          margin-bottom: 30px;
         }
       }
     }

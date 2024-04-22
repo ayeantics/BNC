@@ -434,7 +434,7 @@ header {
 }
 .about-section .container .about-us-container .service-container .service {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .about-section .container .about-us-container .service-container .service .service-inner {
   display: flex;
@@ -560,5 +560,18 @@ footer .text-center p {
   }
   .about-section .container .about-us-container .about-us-text .line {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .about-section .container .about-us-container .about-us-text {
+    font-size: 18px;
+  }
+  .about-section .container .about-us-container h3 {
+    font-size: 19px;
+  }
+  .about-section .container .about-us-container .service-container {
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
