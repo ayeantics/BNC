@@ -599,6 +599,24 @@ footer {
 
   .row {
     margin-bottom: 30px;
+
+    .col-md-4 {
+      .brand-anchor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+
+        p {
+          margin: 0;
+          color: #fff;
+          font-family: "Poppins", sans-serif !important;
+        }
+      }
+    }
   }
 
   .text-center {
@@ -649,6 +667,7 @@ footer {
     }
   }
   .about-section {
+    margin-bottom: 50px;
     .container {
       flex-direction: column;
 
